@@ -15,11 +15,12 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - has_many :comments
 
-## commentsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|
@@ -29,3 +30,5 @@
 ### Association
 - belongs_to :user
 - belongs_to :reward
+
+z

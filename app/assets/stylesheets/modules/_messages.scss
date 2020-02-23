@@ -3,18 +3,107 @@
 }
 
 .wrapper{
-
-
+height:100vh;
   .header{
-  height:30px;
+  height:110px;
+  width:100vw;
   background-color: rgb(233, 21, 21);
+    &-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 10px 20px;
+      &__right-text{
+      background-color: #19ceb6;
+      height: 60px;
+      font-size: 40px;
+      margin-top: 10px;
+      }
+      &__left-text{
+      background-color: #7e13d4;
+      height:40px;
+      text-align: center;
+      line-height: 40px;
+      margin-top: 10px;
+      }
+    }
+    &-sub{
+    display: flex;
+    float: right;
+    background-color: #3217ca;
+    margin-right: 20px;
+      &__mypage{
+
+      }
+      &__cog{
+      padding-left: 20px;
+        & a{
+        color: #ffffff;
+        }
+      }
+    }
 
   }
-  .leftbox{
-  height:
-  }
-  .rightbox{
+  .main{
+  height:100vh;
+  width:100vw;
+  background-color: #b4d619;
+  display: flex;
+  height:calc(100vh - 100px);
+    &-leftbox{
+    width:calc(100vw - 600px);
+    background-color: #1bd8c8;
+    padding: 20px 40px;
+      &-content{
+      background-color: #ffffff;
+      height:70vh;
+        &__careated_at{
 
+        }
+        &__process{
+
+        }
+      }
+      &-form{
+      margin-top: 20px;
+      display: flex;
+      height:60px;
+        &__text{
+        background-color: #4615b8;
+        width:100vw;
+        }
+        &__btn{
+        background-color: #dd16d3;
+        width:30vh;
+        }
+      }
+    }
+    &-rightbox{
+    width:600px;
+    background-color: #270cc5;
+    padding: 20px 40px;
+      &-reward{
+      background-color: #ffffff;
+      height:70px;
+
+      }
+      &-data{
+      background-color: #d81b1b;
+      height:70vh;
+      margin-top: 20px;
+      padding: 30px 40px;
+        &__glaf {
+
+        }
+        &__achievement{
+        background-color: #ffffff;
+        height:60px;
+        width:80px;
+        float: right;
+        margin-top: 20px;
+        }
+      }
+
+    }
   }
 
 }

@@ -1,4 +1,31 @@
 .wrapper
   .header
-  .leftbox
-  .rightbox
+    .header-top
+      .header-top__right-text
+        アプリ名
+      .header-top__left-text
+        = current_user.name
+    .header-sub 
+      .header-sub__mypage
+        マイページ
+      .header-sub__cog
+        = link_to "設定",edit_user_path(current_user) 
+  .main
+    .main-leftbox
+      .main-leftbox-content
+        .main-leftbox-content__careated_at
+          2020/02/23
+        .main-leftbox-content__process
+          頑張ったこと
+
+      .main-leftbox-form
+        .main-leftbox-form__text
+        .main-leftbox-form__btn
+    .main-rightbox
+      .main-rightbox-reward
+        報酬を表示
+      .main-rightbox-data
+        .main-rightbox-data__glaf
+          = render 'rewards/new.html.haml'
+        .main-rightbox-data__achievement
+          達成
