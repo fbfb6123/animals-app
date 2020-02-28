@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :set_current_user
+
   def edit
   end
 
@@ -11,8 +13,11 @@ class UsersController < ApplicationController
     end
   end
 
-  private
+  def set_current_user
+    @current_user = User.find_by(id: session[:user_id])
+  end
 
+  private
   def user_params
     params.require(:user).permit(:name, :email)
   end

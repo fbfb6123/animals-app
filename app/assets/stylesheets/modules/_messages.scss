@@ -7,19 +7,18 @@ height:100vh;
   .header{
   height:110px;
   width:100vw;
-  background-color: rgb(233, 21, 21);
+  background-color: rgba(168, 235, 235, 0.521);
     &-top{
     display: flex;
     justify-content: space-between;
     margin: 0px 20px 10px 20px;
       &__right-text{
-      background-color: #19ceb6;
       height: 60px;
       font-size: 40px;
       margin-top: 10px;
       }
       &__left-text{
-      background-color: #7e13d4;
+      background-color: rgba(168, 235, 235, 0.521)13d4;
       height:40px;
       text-align: center;
       line-height: 40px;
@@ -29,7 +28,7 @@ height:100vh;
     &-sub{
     display: flex;
     float: right;
-    background-color: #3217ca;
+    background-color: rgba(168, 235, 235, 0.521)17ca;
     margin-right: 20px;
       &__mypage{
 
@@ -37,7 +36,7 @@ height:100vh;
       &__cog{
       padding-left: 20px;
         & a{
-        color: #ffffff;
+        color: #140606;
         }
       }
     }
@@ -46,12 +45,11 @@ height:100vh;
   .main{
   height:100vh;
   width:100vw;
-  background-color: #b4d619;
   display: flex;
   height:calc(100vh - 100px);
     &-leftbox{
     width:calc(100vw - 600px);
-    background-color: #1bd8c8;
+    background-color: #464e4e;
     padding: 20px 40px;
       &-content{
       background-color: #ffffff;
@@ -79,15 +77,16 @@ height:100vh;
     }
     &-rightbox{
     width:600px;
-    background-color: #270cc5;
+    background-color: #ffffff;
     padding: 20px 40px;
       &-reward{
-      background-color: #ffffff;
+      background-color: #ada6a6;
       height:70px;
+      
 
       }
       &-data{
-      background-color: #d81b1b;
+      background-color: #485247;
       height:70vh;
       margin-top: 20px;
       padding: 30px 40px;

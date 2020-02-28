@@ -16,14 +16,26 @@
         .main-leftbox-content__careated_at
           2020/02/23
         .main-leftbox-content__process
-          頑張ったこと
+        - @messages.each do |message|
+          .main-leftbox-content__process
+            = message.content
+
 
       .main-leftbox-form
         .main-leftbox-form__text
-        .main-leftbox-form__btn
+          .main-leftbox-form__text_a
+            =form_for (@message) do |f|
+              .main-leftbox-form__text_a__b
+              = f.text_field :content, class: "chat-group-form__input"
+              = f.hidden_field :user_id, value: current_user.id 
+              .main-leftbox-form__text_a__b__c
+              = f.submit "Save", class: "chat-group-form__action-btn"
+       
     .main-rightbox
       .main-rightbox-reward
-        報酬を表示
+        = link_to "報酬を設定",new_reward_path(current_user) 
+        .main-rightbox-reward__achievement
+        
       .main-rightbox-data
         .main-rightbox-data__glaf
           = render 'rewards/new.html.haml'
