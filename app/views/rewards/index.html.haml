@@ -2,12 +2,12 @@
   .header
     .header-top
       .header-top__right-text
-        アプリ名(rewardのindex)
+        G.A.Reward(rewardのindex)
       .header-top__left-text
         = current_user.name
     .header-sub 
       .header-sub__mypage
-        マイページ
+        = link_to "マイページ",reward_path(current_user) 
       .header-sub__cog
         = link_to "設定",edit_user_path(current_user) 
   .main
@@ -25,20 +25,23 @@
       .main-leftbox-form
         .main-leftbox-form__text
           .main-leftbox-form__text_a
-            =form_for (@message) do |f|
-              .main-leftbox-form__text_a__b
-              = f.text_field :content, class: "chat-group-form__input"
-              = f.hidden_field :user_id, value: current_user.id 
-              .main-leftbox-form__text_a__b__c
-              = f.submit "Save", class: "chat-group-form__action-btn"
+            -# = form_for (@reward, @message) do |f|
+            -#   = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+            -#   .form__mask
+            -#   = f.hidden_field :user_id, value: current_user.id 
+            -#   .main-leftbox-form__text_a__b__c
+            -#   = f.submit "Save", class: "chat-reward-form__action-btn"
        
     .main-rightbox
       .main-rightbox-reward
-        = link_to "報酬を設定",new_reward_path(current_user) 
+        = link_to new_reward_path do
+          .main-rightbox-reward_cog
+          報酬を設定
         .main-rightbox-reward__achievement
+          REWARD：
           - current_user.rewards.last(1).each do |reward|
-            .reward
-              = link_to '#' do
+            .reward__achievement
+              = link_to reward_messages_path(reward) do
                 .reward__name
                   = reward.name
         
@@ -47,3 +50,7 @@
           = render 'rewards/new.html.haml'
         .main-rightbox-data__achievement
           達成
+        -# .main-rightbox-reward
+        -# = link_to edit_reward_path do
+        -#   .main-rightbox-reward_cog
+        -#   報酬をへんへん
