@@ -1,5 +1,5 @@
 class Reward < ApplicationRecord
   belongs_to :user
   has_many :messages
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 end

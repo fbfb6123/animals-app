@@ -1,5 +1,5 @@
 class Message < ApplicationRecord
-  belongs_to :user
   belongs_to :reward, optional: true
-  validates :content, presence: true
+  belongs_to :user
+  validates :content, presence: true, uniqueness: true
 end
