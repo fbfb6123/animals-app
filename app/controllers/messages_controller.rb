@@ -1,11 +1,12 @@
 class MessagesController < ApplicationController
 
-  # before_action :set_reward
+   before_action :set_reward
 
   def index
     @message = Message.new
-    @reward = Reward.where(user_id: current_user.id)
-    @messages = Message.where(user_id: current_user.id)
+    # @reward = Reward.where(user_id: current_user.id)
+    # @messages = Message.where(user_id: current_user.id)
+    @messages = @reward.messages.includes(:user)
   end
 
   def new
@@ -13,21 +14,25 @@ class MessagesController < ApplicationController
   end
  
   def create
-    @message = Message.new(message_params)
+    @message = @reward.messages.new(message_params)
     if @message.save
-      redirect_to root_path, notice: '報酬を設定しました'
+      redirect_to reward_messages_path(@reward), notice: 'メッセージが送信されました'
     else
-      render :new
+      @messages = @reward.messages.includes(:user)
+      render :index
     end
+  end
+
+  def edit
   end
 
   private
   def message_params
-    params.require(:message).permit(:content, :user_id, :reward_id)
+    params.require(:message).permit(:content).merge(user_id: current_user.id)
   end
 
-  # def set_reward
-  #   @reward = Reward.find(params[:reward_id])
-  # end
+   def set_reward
+     @reward = Reward.find(params[:reward_id])
+   end
   
 end

@@ -1,0 +1,7 @@
+.chat-reward-form
+  %h1 報酬編集
+  = render partial: 'form', locals: { reward: @reward }
+
+-# = form_for @reward do |f|
+-#   = f.text_field :name, class: "chat-reward-form__input", placeholder: "グループ名を入力してください"
+-#   = f.submit "Save", class: "chat-reward-form__action-btn"

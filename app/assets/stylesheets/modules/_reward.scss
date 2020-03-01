@@ -24,84 +24,127 @@ li {
 
 
 
-.chat-group-form {
-  width: 980px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+* {
   box-sizing: border-box;
-  &__errors {
-    margin: 30px 0;
-    padding: 20px 40px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    text-align: center;
-  }
-  &__label {
-    display: block;
-    line-height: 50px;
-    font-weight: bold;
-    text-align: right;
-  }
-  &__input {
-    float: left;
-    width: 100%;
-    line-height: 30px;
-    padding: 10px 15px;
-    box-sizing: border-box;
-  }
-  &__action-btn {
-    display: inline-block;
-    padding: 12px 20px;
-    color: #fff;
-    background-color: #38aef0;
-    border: 0;
-  }
-  &__field {
-    margin-top: 30px;
-    &:after {
-      content: "";
-      clear: both;
-      display: block;
-    }
-    &--left {
-      float: left;
-      width: 30%;
-      padding-right: 20px;
-      padding-left: 20px;
-      box-sizing: border-box;
-    }
-    &--right {
-      float: right;
-      width: 70%;
-    }
-  }
 }
 
-.chat-group-user {
-  padding: 0 15px;
-  line-height: 50px;
-  font-size: 14px;
-  border-bottom: 1px solid #ddd;
-  &:after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-  &__name {
-    float: left;
-  }
-  &__btn {
+.wrapper{
+height:100vh;
+font-family: "游ゴシック体", YuGothic;
+  .header{
+  height:100px;
+  width:100vw;
+    &-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px 10px 50px;
+
+      &__right-text{
+      height: 60px;
+      font-size: 40px;
+      margin-top: 10px;
+      }
+      &__left-text{
+      background-color: rgba(168, 235, 235, 0.521)13d4;
+      height:40px;
+      text-align: center;
+      line-height: 40px;
+      margin-top: 10px;
+      }
+    }
+    &-sub{
+    display: flex;
     float: right;
-    display: inline-block;
-    cursor: pointer;
-    &--add {
-      color: #38aef0;
+    background-color: rgba(168, 235, 235, 0.521)17ca;
+    margin-right: 20px;
+      &__mypage{
+
+      }
+      &__cog{
+      padding-left: 20px;
+        & a{
+        color: #140606;
+        }
+      }
     }
-    &--remove {
-      color: #f05050;
+
+  }
+  .main{
+  height:100vh;
+  width:100vw;
+  display: flex;
+  height:calc(100vh - 100px);
+    &-leftbox{
+    width:calc(100vw - 600px);
+    background-color: #e2ecec;
+    padding: 20px 40px;
+      &-content{
+      background-color: #ffffff;
+      height:70vh;
+        &__careated_at{
+
+        }
+        &__process{
+
+        }
+      }
+      &-form{
+      margin-top: 20px;
+      display: flex;
+      height:60px;
+        &__text{
+        width:100vw;
+        }
+        &__btn{
+        background-color: #dd16d3;
+        width:30vh;
+        }
+      }
+    }
+    &-rightbox{
+    width:600px;
+    background-color: #ffffff;
+    padding: 20px 40px;
+      &-reward{
+      background-color: #ada6a6;
+      height:70px;
+      padding: 20px;
+        &_cog{
+        }
+        a{
+          color: #ffffff;
+        }
+        
+        &__achievement{
+          display: flex;
+          float: right;
+          margin-right: 30px;
+          font-size: 20px;
+        }
+      }
+      &-data{
+      background-color: #c6e7c3;
+      height:73vh;
+      margin-top: 20px;
+      padding: 30px 40px;
+        &__glaf {
+
+        }
+        &__achievement{
+        background-color: #ffffff;
+        height:60px;
+        width:80px;
+        float: right;
+        margin-top: 20px;
+        }
+      }
+
     }
   }
+
+ 
 }
+
+// a{
+//   color:#ffffff;
+// }

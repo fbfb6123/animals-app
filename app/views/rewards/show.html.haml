@@ -1,0 +1,11 @@
+- current_user.rewards.each do |reward|
+  .reward__achievement
+    = link_to reward_messages_path(reward) do
+      .reward__name
+        = reward.name
+
+
+
+- current_user.messages.each do |message|
+  .message__content
+    = message.content

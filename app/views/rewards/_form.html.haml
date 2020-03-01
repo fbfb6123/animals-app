@@ -1,0 +1,11 @@
+= form_for reward do |f|
+  .chat-reward-form__field
+    .chat-reward-form__field--left
+      = f.label :content, class: 'chat-reward-form__label'
+    .chat-reward-form__field--right
+      = f.text_field :name, class: 'chat__reward_name chat-reward-form__input', placeholder: '報酬を入力してください'
+  .chat-reward-form__field.clearfix
+    .chat-reward-form__field--left
+    .chat-reward-form__field--right
+      = f.hidden_field :user_id, value: current_user.id 
+      = f.submit class: 'chat-reward-form__action-btn'
