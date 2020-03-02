@@ -2,7 +2,7 @@
   .header
     .header-top
       .header-top__right-text
-        G.A.Reward(rewardのindex)
+        G.A.Reward
       .header-top__left-text
         = current_user.name
     .header-sub 
@@ -32,7 +32,6 @@
           %li ＜例＞勉強　（今日は８時間勉強をした,　朝いつもより早く起床して勉強に励んだなど）
           %li　
           %li ＜例＞身体について　（ダイエットのために減食,　今日は3kmランニングをしたなど）
-          %li　
           %li　
           %li これまでの報酬、頑張ったことはマイページからリストとして後から見返すことが可能です。
           %li　
@@ -70,8 +69,7 @@
       .main-rightbox-data
         .main-rightbox-data__glaf
           = render 'rewards/new.html.haml'
-        .main-rightbox-data__achievement
-          達成
+       
         -# .main-rightbox-reward
         -# = link_to edit_reward_path do
         -#   .main-rightbox-reward_cog

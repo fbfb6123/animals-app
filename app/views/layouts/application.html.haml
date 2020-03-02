@@ -6,5 +6,12 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+
+  %body 
+    -# .header
+    -# .header-top
+    -#   .header-top__right-text
+    -#     G.A.Reward(rewardのindex)
+    -#   .header-top__left-text
+    -#     = current_user.name
     = yield

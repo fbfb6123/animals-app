@@ -55,16 +55,16 @@ font-family: "游ゴシック体", YuGothic;
     &-sub{
     display: flex;
     float: right;
-    background-color: rgba(168, 235, 235, 0.521)17ca;
     margin-right: 20px;
+    font-size: 20px;
       &__mypage{
-
+     
+      }
+        & a{
+          color: rgb(25, 0, 255);
       }
       &__cog{
       padding-left: 20px;
-        & a{
-        color: #140606;
-        }
       }
     }
 
@@ -90,18 +90,7 @@ font-family: "游ゴシック体", YuGothic;
 
         }
       }
-      &-form{
-      margin-top: 20px;
-      display: flex;
-      height:60px;
-        &__text{
-        width:100vw;
-        }
-        &__btn{
-        background-color: #dd16d3;
-        width:30vh;
-        }
-      }
+    
     }
     &-rightbox{
     width:600px;
@@ -115,6 +104,7 @@ font-family: "游ゴシック体", YuGothic;
         }
         a{
           color: #030303;
+          text-decoration: none;
         }
         
         &__achievement{
@@ -138,6 +128,7 @@ font-family: "游ゴシック体", YuGothic;
         width:80px;
         float: right;
         margin-top: 20px;
+        text-decoration: none;
         }
       }
 
@@ -147,6 +138,7 @@ font-family: "游ゴシック体", YuGothic;
  
 }
 
-// a{
-//   color:#ffffff;
-// }
+a{
+  text-decoration: none;
+  color: #0c0b0b;
+}

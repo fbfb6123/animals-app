@@ -87,6 +87,7 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
       background-color: #ffffff;
       height:70vh;
       padding: 20px 40px;
+      overflow: scroll;
         &__careated_at{
         margin-top:10px;
         }
@@ -95,16 +96,21 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
       }
       &-form{
       margin-top: 20px;
-      display: flex;
       height:60px;
+      width:400px;
         &__text{
-        background-color: #4615b8;
-        width:100vw;
-        }
-        &__btn{
-        background-color: #dd16d3;
-        width:30vh;
-        }
+          width:100%;
+          }
+          .main-leftbox-form__text_btn{
+          
+          }
+            .form__message{
+            width: 100%;
+            }
+            .form__mask{
+            width:50px;
+            float: right;
+            }
       }
     }
     &-rightbox{
@@ -155,7 +161,47 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
     }
   }
 
- 
+  
+  
+}
+    .message_list{
+    background-image: url(pattern_54.jpg);
+    height:100vh;
+    width:100vw;
+      &_header{
+      background-color: #ffffff;
+      height:30px;
+      width:50px;
+      display: contents;
+        &_text{
+        height:40px;
+        width:100%;
+        background-color: rgb(219, 219, 236);
+        }
+      }
+    
+      &_done{
+      height: 90%;
+      background-color: #dad2d2;
+      width:60vw;
+      text-align: center;
+      margin: auto;
+      overflow: scroll;
+        &__process{
+
+        }
+        &__careated_at{
+        padding-top: 20px;
+        text-decoration: none;
+        }
+      }
+      &_top{
+      
+      text-align: center; 
+      }
+    }
+
+.form__submit{
 }
 
 // a{

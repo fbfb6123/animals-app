@@ -9,6 +9,10 @@ class MessagesController < ApplicationController
     @messages = @reward.messages.includes(:user)
   end
 
+  def show
+    @messages = @reward.messages.includes(:user)
+  end
+
   def new
     @message = Message.all
   end

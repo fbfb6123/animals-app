@@ -24,12 +24,11 @@
 
       .main-leftbox-form
         .main-leftbox-form__text
-          .main-leftbox-form__text_a
-          .form
+          .main-leftbox-form__text_btn
             = form_for [@reward, @message] do |f|
               = f.text_field :content, class: 'form__message', placeholder: 'type a message'
               .form__mask
-              = f.submit 'Send', class: 'form__submit'
+                = f.submit 'Send', class: 'form__submit'
 
 
            

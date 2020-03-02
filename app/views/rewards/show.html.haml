@@ -1,11 +1,29 @@
-- current_user.rewards.each do |reward|
-  .reward__achievement
-    = link_to reward_messages_path(reward) do
-      .reward__name
-        = reward.name
+.message_list
+  .message_list_header
+    .message_list_header_text
+      %h1 Well done list
+
+  .message_list_done
+    - current_user.rewards.each do |reward|
+      .reward__achievement
+        = link_to reward_message_path(reward) do
+          .message_list_done__careated_at
+            = reward.name
+
+  .message_list_top
+  = link_to "トップページ", root_path, class: 'btn'
+        
 
 
 
-- current_user.messages.each do |message|
-  .message__content
-    = message.content
+
+
+
+
+
+
+
+
+
+
+
