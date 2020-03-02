@@ -83,14 +83,14 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
     width:calc(100vw - 600px);
     background-color:  #e2ecec;
     padding: 20px 40px;
-      &-content{
+      &-contents{
       background-color: #ffffff;
       height:70vh;
+      padding: 20px 40px;
         &__careated_at{
-
+        margin-top:10px;
         }
         &__process{
-
         }
       }
       &-form{
@@ -114,7 +114,7 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
       &-reward{
       display: flex;
       justify-content: space-around;
-      background-color: #ada6a6;
+      background-color: #e6e1e1;
       height:70px;
       padding: 20px;
       text-decoration: none;

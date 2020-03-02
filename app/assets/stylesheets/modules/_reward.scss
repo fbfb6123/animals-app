@@ -81,6 +81,8 @@ font-family: "游ゴシック体", YuGothic;
       &-content{
       background-color: #ffffff;
       height:70vh;
+      text-align: center;
+      padding: 20px 40px;
         &__careated_at{
 
         }
@@ -106,13 +108,13 @@ font-family: "游ゴシック体", YuGothic;
     background-color: #ffffff;
     padding: 20px 40px;
       &-reward{
-      background-color: #ada6a6;
+      background-color: #e5eee4;
       height:70px;
       padding: 20px;
         &_cog{
         }
         a{
-          color: #ffffff;
+          color: #030303;
         }
         
         &__achievement{
@@ -123,7 +125,7 @@ font-family: "游ゴシック体", YuGothic;
         }
       }
       &-data{
-      background-color: #c6e7c3;
+      background-color: #e5eee4;
       height:73vh;
       margin-top: 20px;
       padding: 30px 40px;

@@ -14,17 +14,39 @@
     .main-leftbox
       .main-leftbox-content
         .main-leftbox-content__process
-        - @messages.each do |message|
-          .upper-message__date
-            = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-          .main-leftbox-content__process
-            = message.content
-          
+        %h1 Welcome to G.A.Reward
+        %ul
+          %li 　
+          %li 　
+          %li このアプリはモチベーション向上を目的としたアプリとなっております。
+          %li 　
+
+          %li 報酬を設定したうえで、達成に向けて頑張ったことや他人から褒められたことなどを投稿していき、目標値に満たされた際に設定した報酬をあなた自身に与えてください。
+          %li ※目標値および報酬につきましては途中で編集可能
+          %li　
+          %li　
+          %li 投稿内容については具体的でなくとも構いません。下記に例を記載していますので、もし分からないと言う方はご確認ください。
+          %li　
+          %li ＜例＞仕事　（上司にお客様の対応を褒められた, 　いつもより生産性が高かったなど）
+          %li　
+          %li ＜例＞勉強　（今日は８時間勉強をした,　朝いつもより早く起床して勉強に励んだなど）
+          %li　
+          %li ＜例＞身体について　（ダイエットのために減食,　今日は3kmランニングをしたなど）
+          %li　
+          %li　
+          %li これまでの報酬、頑張ったことはマイページからリストとして後から見返すことが可能です。
+          %li　
 
 
-      .main-leftbox-form
-        .main-leftbox-form__text
-          .main-leftbox-form__text_a
+
+
+        
+
+
+
+      -# .main-leftbox-form
+      -#   .main-leftbox-form__text
+      -#     .main-leftbox-form__text_a
             -# = form_for (@reward, @message) do |f|
             -#   = f.text_field :content, class: 'form__message', placeholder: 'type a message'
             -#   .form__mask

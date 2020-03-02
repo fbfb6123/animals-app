@@ -8,17 +8,17 @@
         = current_user.name
     .header-sub 
       .header-sub__mypage
-        マイページ
+        = link_to "マイページ",reward_path(current_user)
       .header-sub__cog
         = link_to "設定",edit_user_path(current_user) 
   .main
     .main-leftbox
-      .main-leftbox-content
-        .main-leftbox-content__process
+      .main-leftbox-contents
+        .main-leftbox-contents__process
         - @messages.each do |message|
-          .upper-message__date
+          .main-leftbox-contents__careated_at
             = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-          .main-leftbox-content__process
+          .main-leftbox-contents__process
             = message.content
 
 
