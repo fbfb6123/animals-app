@@ -1,7 +1,9 @@
-=form_for (@reward) do |f|
-  = f.text_field :name, class: "chat-group-form__input"
-  = f.hidden_field :user_id, value: current_user.id 
-  = f.submit "Save", class: "chat-group-form__action-btn"
+.achievement_new
+  .achievement_new__form
+    =form_for (@reward) do |f|
+      = f.text_field :name, class: "chat-group-form__input"
+      = f.hidden_field :user_id, value: current_user.id 
+      = f.submit "Save", class: "chat-group-form__action-btn"
 
   -# - @rewards.each do |reward|
   -#   .main-leftbox-content__process

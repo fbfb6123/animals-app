@@ -29,6 +29,8 @@
               = f.text_field :content, class: 'form__message', placeholder: 'type a message'
               .form__mask
                 = f.submit 'Send', class: 'form__submit'
+        .main-leftbox-form__achievement
+          = link_to "達成", new_reward_path, class: 'btn'
 
 
            
@@ -49,8 +51,7 @@
       .main-rightbox-data
         .main-rightbox-data__glaf
           = render 'rewards/new.html.haml'
-        .main-rightbox-data__achievement
-          = link_to "達成", root_path, class: 'btn'
+        
 
         -# .main-rightbox-rewardd
         -#   = link_to edit_reward_path(@reward) 

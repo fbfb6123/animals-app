@@ -35,7 +35,7 @@ li {
 .wrapper{
 height:100vh;
 font-family: "游ゴシック体", YuGothic;
-background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-with-bricks-white-bricks.jpg);
+background-image: url(minpix-slide3-min.jpg);
 
   .header{
   height:100px;
@@ -98,12 +98,22 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
       margin-top: 20px;
       height:60px;
       width:400px;
+      display: flex;
         &__text{
           width:100%;
           }
           .main-leftbox-form__text_btn{
           
           }
+          &__achievement{
+            background-color: #ffffff;
+            height:60px;
+            width:80px;
+            float: right;
+            text-align: center;
+            line-height: 3.5;
+            margin-left:10px;
+            }
             .form__message{
             width: 100%;
             }
@@ -115,7 +125,7 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
     }
     &-rightbox{
     width:600px;
-    background-color: #ffffff;
+    background-color:  #b7d1d1;
     padding: 20px 40px;
       &-reward{
       display: flex;
@@ -146,16 +156,7 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
         &__glaf {
 
         }
-        &__achievement{
-        background-color: #ffffff;
-        height:60px;
-        width:80px;
-        float: right;
-        margin-top: 20px;
-        text-align: center;
-        line-height: 3.5;
-
-        }
+        
       }
 
     }
@@ -177,6 +178,7 @@ background-image: url(thumb2-white-bricks-wall-stone-white-texture-background-wi
         height:40px;
         width:100%;
         background-color: rgb(219, 219, 236);
+        margin-bottom: 10px;
         }
       }
     

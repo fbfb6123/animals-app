@@ -94,7 +94,6 @@ font-family: "游ゴシック体", YuGothic;
     }
     &-rightbox{
     width:600px;
-    background-color: #ffffff;
     padding: 20px 40px;
       &-reward{
       background-color: #e5eee4;
@@ -137,6 +136,14 @@ font-family: "游ゴシック体", YuGothic;
 
  
 }
+
+.achievement_new{
+
+  &__form{
+    
+  }
+}
+
 
 a{
   text-decoration: none;
