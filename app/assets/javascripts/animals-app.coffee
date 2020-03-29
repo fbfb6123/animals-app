@@ -3,7 +3,7 @@ window.draw_graph = ->
     myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            labels: ["one", "two", "three", "four", "five", "six"],
             datasets: [{
                 label: '# of Votes',
                 data: [12, 2, 3, 5, 2, 13],

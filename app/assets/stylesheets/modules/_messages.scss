@@ -97,13 +97,13 @@ background-image: url(minpix-slide3-min.jpg);
       &-form{
       margin-top: 20px;
       height:60px;
-      width:400px;
+      width:600px;
       display: flex;
         &__text{
           width:100%;
           }
-          .main-leftbox-form__text_btn{
-          
+          .new_message{
+          display: flex;
           }
           &__achievement{
             background-color: #ffffff;
@@ -113,13 +113,21 @@ background-image: url(minpix-slide3-min.jpg);
             text-align: center;
             line-height: 3.5;
             margin-left:10px;
+            border-radius:20px;
             }
             .form__message{
-            width: 100%;
+            width: 400px;
+            height: 62px;
             }
             .form__mask{
             width:50px;
             float: right;
+            }
+            .form__submit{
+            height:60px;
+            width:100px;
+            background-color: aliceblue;
+            border-radius:10px;
             }
       }
     }

@@ -27,8 +27,8 @@
           .main-leftbox-form__text_btn
             = form_for [@reward, @message] do |f|
               = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-              .form__mask
-                = f.submit 'Send', class: 'form__submit'
+             
+              = f.submit 'Send', class: 'form__submit'
         .main-leftbox-form__achievement
           = link_to "達成", new_reward_path, class: 'btn'
 
