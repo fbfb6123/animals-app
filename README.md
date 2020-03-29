@@ -26,7 +26,7 @@ G.A.Reward
 ## 使い方
  
 1. 
-- ![Uploading 46f3d5293098d66131c27717dd625d15.png…]()
+- <img width="1432" alt="46f3d5293098d66131c27717dd625d15" src="https://user-images.githubusercontent.com/60612010/77843769-52d9bf80-71db-11ea-8f4f-e8259207e52a.png">
 
 2. 
 3. 
