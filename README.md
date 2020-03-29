@@ -20,7 +20,7 @@ G.A.Reward
 ## 開発環境
  
 - Ruby 2.5.1
-- Rails 5.0.7.2
+- Rails 5.0.7
 - mysql 5.6.47
  
 ## 使い方
