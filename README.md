@@ -27,7 +27,7 @@ G.A.Reward
  
 1. 自身で設定した報酬に対して、左下の入力フォームから頑張ったことを投稿。
 - 投稿した内容が入力フォームの上段に表示される。
-<<img width="1431" alt="c42ecaeb66a8012d43cb019e6ca1dab3" src="https://user-images.githubusercontent.com/60612010/77875324-aeaf5180-728a-11ea-9935-68c36298740c.png">
+<img width="1431" alt="c42ecaeb66a8012d43cb019e6ca1dab3" src="https://user-images.githubusercontent.com/60612010/77875324-aeaf5180-728a-11ea-9935-68c36298740c.png">
 
 2. 
 ![46015a5011d5c2683f130afa73fbddbe](https://user-images.githubusercontent.com/60612010/77873968-6db53e00-7286-11ea-8dfa-8c1cd325bb7a.jpg)
