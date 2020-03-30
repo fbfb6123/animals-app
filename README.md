@@ -26,7 +26,7 @@ G.A.Reward
 ## 使い方
  
 1. 
- <img width="1432" alt="46f3d5293098d66131c27717dd625d15" src="https://user-images.githubusercontent.com/60612010/77843769-52d9bf80-71db-11ea-8f4f-e8259207e52a.png">
+<img width="1431" alt="7cbe301290a59e3e586696a4adb628b1" src="https://user-images.githubusercontent.com/60612010/77874132-02b83700-7287-11ea-890a-317bd495bc80.png">
 
 2. 
 ![46015a5011d5c2683f130afa73fbddbe](https://user-images.githubusercontent.com/60612010/77873968-6db53e00-7286-11ea-8dfa-8c1cd325bb7a.jpg)
