@@ -29,10 +29,9 @@ G.A.Reward
 - 投稿した内容が入力フォームの上段に表示される。
 <img width="1431" alt="c42ecaeb66a8012d43cb019e6ca1dab3" src="https://user-images.githubusercontent.com/60612010/77875324-aeaf5180-728a-11ea-9935-68c36298740c.png">
 
-2. 
+2. マイページからこれまで設定した報酬一覧を表示して、報酬をクリックすると報酬に紐ついた頑張った事が表示されます。
 ![46015a5011d5c2683f130afa73fbddbe](https://user-images.githubusercontent.com/60612010/77873968-6db53e00-7286-11ea-8dfa-8c1cd325bb7a.jpg)
-3. 
- 
+
  
 ## その他
  
