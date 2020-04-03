@@ -14,6 +14,7 @@ class RewardsController < ApplicationController
   def new
     @reward = Reward.new
     @rewards = Reward.where(user_id: current_user.id)
+    
   end
 
   def create

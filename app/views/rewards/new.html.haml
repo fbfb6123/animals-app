@@ -6,7 +6,17 @@
       =form_for (@reward) do |f|
         = f.text_field :name, class: "chat-reward-form__input"
         = f.hidden_field :user_id, value: current_user.id 
-        = f.submit "Save", class: "chat-reward-form__action-btn"
+        = f.submit "報酬を設定", class: "chat-reward-form__action-btn"
+
+  
+    .achievement_new__list
+      これまでの達成一覧
+    .message_list_achievement
+      - current_user.rewards.each do |reward|
+        = link_to "#" do
+          .reward__achievement
+            .message_list_done__careated_at
+              = reward.name
 
   -# - @rewards.each do |reward|
   -#   .main-leftbox-content__process

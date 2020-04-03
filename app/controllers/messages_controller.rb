@@ -7,6 +7,7 @@ class MessagesController < ApplicationController
     # @reward = Reward.where(user_id: current_user.id)
     # @messages = Message.where(user_id: current_user.id)
     @messages = @reward.messages.includes(:user)
+    
   end
 
   def show

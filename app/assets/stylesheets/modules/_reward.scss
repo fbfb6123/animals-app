@@ -144,16 +144,17 @@ font-family: "游ゴシック体", YuGothic;
   .achievement_new__form{
   height: 800px;
   width: 700px;
-  background-color: #bb1818;
+  background-color: #e4b9b9;
   margin: auto;
+  padding: 40px 40px;
     .achievement_new__form__texts{
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
     }
       .achievement_new__form__text__item{
       margin: auto;
-      height: 500px;
       width: 400px;
-      background-color: #30b61f;
         .chat-reward-form__input{
         width: 400px;
         }
@@ -162,7 +163,21 @@ font-family: "游ゴシック体", YuGothic;
         }
     }
   }
+  .achievement_new__list{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  }
+    .message_list_achievement{
+    background-color: #f5e6e6;
+    height: 400px;
+    width: 600px;
+    margin-top: 20px;
+    overflow:scroll;
+    text-align: center;
+  }
 }
+
 
 
 a{

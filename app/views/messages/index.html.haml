@@ -30,7 +30,7 @@
              
               = f.submit 'Send', class: 'form__submit'
         .main-leftbox-form__achievement
-          = link_to "達成", new_reward_path, class: 'btn'
+          = link_to "達成", new_reward_path(current_user) , class: 'btn'
 
 
            

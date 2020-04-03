@@ -1,11 +1,19 @@
+.achievement_new
+  .achievement_new__form
+    .achievement_new__form__texts
+      達成おめでとうございます。新しい報酬を設定してください
+    .achievement_new__form__text__item
+      =form_for (@reward) do |f|
+        = f.text_field :name, class: "chat-reward-form__input"
+        = f.hidden_field :user_id, value: current_user.id 
+        = f.submit "報酬を設定", class: "chat-reward-form__action-btn"
 
-
-
-
-.chat-main
-  -# - @message.each do |message|
-  -#   .main-leftbox-content__process
-  -#   = message.content
-
-
-= link_to "トップページ", root_path, class: 'btn'
+  
+    .achievement_new__list
+      これまでの達成一覧
+    .message_list_achievement
+      - current_user.rewards.each do |reward|
+        = link_to "#" do
+          .reward__achievement
+            .message_list_done__careated_at
+              = reward.name
