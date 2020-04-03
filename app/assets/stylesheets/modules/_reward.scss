@@ -137,9 +137,30 @@ font-family: "游ゴシック体", YuGothic;
 }
 
 .achievement_new{
-
-  &__form{
-    
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  overflow:scroll;
+  .achievement_new__form{
+  height: 800px;
+  width: 700px;
+  background-color: #bb1818;
+  margin: auto;
+    .achievement_new__form__texts{
+    font-size: 25px;
+    }
+      .achievement_new__form__text__item{
+      margin: auto;
+      height: 500px;
+      width: 400px;
+      background-color: #30b61f;
+        .chat-reward-form__input{
+        width: 400px;
+        }
+        .chat-reward-form__action-btn{
+        width: 400px;
+        }
+    }
   }
 }
 
