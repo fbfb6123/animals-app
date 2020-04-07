@@ -71,3 +71,5 @@ G.A.Reward
 - belongs_to :user
 - belongs_to :reward
 
+
+
