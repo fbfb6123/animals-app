@@ -33,6 +33,8 @@ G.A.Reward
 ![46015a5011d5c2683f130afa73fbddbe](https://user-images.githubusercontent.com/60612010/77873968-6db53e00-7286-11ea-8dfa-8c1cd325bb7a.jpg)
 
  
+## 工夫した点
+ 
 ## その他
  
 
