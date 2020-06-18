@@ -62,3 +62,4 @@ G.A.Reward
 ### Association
 - belongs_to :user
 - belongs_to :rewar
+
